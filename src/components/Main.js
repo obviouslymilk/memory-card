@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import Cards from '../utils/cards';
+import Scoreboard from "./game/scoreboard/Scoreboard";
+import CardsContainer from './game/cards/CardsContainer';
 
 function Main() {   
     /**
@@ -7,14 +9,13 @@ function Main() {
      * @param {number} amount Amount of cards in array
      * @returns array of random cardbacks
      */
-    // const getCardbacks = amount => {
+    // const getRandomCards = amount => {
     //     const copy = Cards.sort(() => Math.random() - 0.5);
     //     return copy.slice(0, amount);
     // }
-    
 
     return (<main>
-        
+        <Scoreboard />
     </main>);
 }
 
