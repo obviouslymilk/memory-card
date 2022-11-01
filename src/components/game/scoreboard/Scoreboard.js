@@ -1,4 +1,3 @@
-
 function Scoreboard(props) {
     return (
         <div id="scoreboard">
