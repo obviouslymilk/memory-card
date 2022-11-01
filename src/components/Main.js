@@ -33,7 +33,7 @@ function Main() {
         }
     } 
 
-    return (<main>
+    return (<main id="Main">
         <Scoreboard current={currentScore} high={highScore} />
         <CardsContainer cards={cards} onClick={handleCardSelect} />
     </main>);

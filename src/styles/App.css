@@ -1,0 +1,58 @@
+@font-face {
+    font-family: Hearthstone;
+    src: url(../assets/font.otf);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(../assets/background.png);
+    background-size: cover;
+    font-family: Hearthstone;
+}
+
+#root {
+    height: 100vh;
+}
+
+#App {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Header img {
+    height: 200px;
+}
+
+#Main {
+    width: 40%;
+    margin-bottom: auto;
+}
+
+#Footer {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-image: url(../assets/footer.webp);
+}
+
+#Footer p {
+    padding-left: 1rem;
+    color: rgb(231, 224, 199);
+}
+
+#Footer a {
+    padding-right: 1rem;
+}
+
+#github-link {
+    margin-left: auto;
+    height: 50px;
+}

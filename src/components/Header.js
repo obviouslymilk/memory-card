@@ -1,6 +1,10 @@
+import logo from '../assets/logo.png';
+
 function Header() {
     return (
-        <div></div>
+        <div id='Header'>
+            <img src={logo} alt="Hearthstone Memory Card" />
+        </div>
     );
 }
 

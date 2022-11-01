@@ -1,5 +1,6 @@
 import Card from './Card';
 import { v4 as uuidv4 } from 'uuid';
+import '../../../styles/CardsContainer.css';
 
 function CardsContainer(props) {
 
@@ -10,7 +11,7 @@ function CardsContainer(props) {
         })
     }
 
-    return (<div id="container" style={{"display":"flex", "flexFlow":"row wrap"}}>
+    return (<div id="container">
         {mapCards()}
     </div>);
 }
