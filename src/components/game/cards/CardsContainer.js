@@ -5,11 +5,12 @@ function CardsContainer(props) {
 
     function mapCards() {
         return props.cards.map(card => {
-            return <Card key={ uuidv4() } src={card} />
+            const uuid = uuidv4();
+            return <Card key={ uuid } src={card} onClick={props.onClick} />
         })
     }
 
-    return (<div id="container">
+    return (<div id="container" style={{"display":"flex", "flexFlow":"row wrap"}}>
         {mapCards()}
     </div>);
 }
